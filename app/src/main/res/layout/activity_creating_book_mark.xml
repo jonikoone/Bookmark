@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:noHistory="true"
+    tools:context=".CreatingBookmark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainCreating">
+
+        <EditText
+            android:id="@+id/nameBookmarkCreating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Название заметки" />
+
+        <EditText
+            android:id="@+id/noteBookmarkCreating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:text="Содержание\nСодержание\nСодержание\nСодержание" />
+
+        <Button
+            android:id="@+id/saveCreating"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Сохранить заметку" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
